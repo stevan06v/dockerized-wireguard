@@ -10,8 +10,7 @@ services:
       #- INSECURE=false
       - LANG=de
       - WG_HOST=90.146.252.247
-      #- PASSWORD_HASH=$2a$12$mia6SFSKbtzLYuSX9tqdRerzPOd5oErarIiKXqWp36DUWinCXYIuK
-    
+      - PASSWORD_HASH=$2a$12$0qy9SxQjbE4GVcdkXs2gMO69t72TGHP5KDL3Wbbk72f2Z9dsrgxoq   
     image: ghcr.io/wg-easy/wg-easy:latest
     container_name: wg-easy
     networks:

@@ -1,3 +1,22 @@
+### SETUP docker-compose
+```bash
+bash run.sh
+# just copy the public ip
+```
+
+```yaml
+# put the public ip after WG_HOST=90....
+services:
+  wg-easy:
+    environment:
+      - PORT=51821
+      - WG_PORT=51820
+      - HOST=0.0.0.0
+      - LANG=de
+      - WG_HOST=
+```
+
+
 ### **Crontab Entry for Auto-Starting Docker Compose on Boot**  
 You need to add a cron job that runs the `docker-compose up -d` command on system startup.  
 

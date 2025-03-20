@@ -4,14 +4,13 @@ volumes:
 services:
   wg-easy:
     environment:
-    #  Optional:
       - PORT=51821
       - WG_PORT=51820
       - HOST=0.0.0.0
-      - INSECURE=false
+      #- INSECURE=false
       - LANG=de
       - WG_HOST=90.146.252.247
-      - PASSWORD_HASH=$2a$12$1b74nSRIYL7VZ/gduIIi7.PYN9zY.ONcoT2X63iuV.e2s0lk14hJy
+      #- PASSWORD_HASH=$2a$12$mia6SFSKbtzLYuSX9tqdRerzPOd5oErarIiKXqWp36DUWinCXYIuK
     
     image: ghcr.io/wg-easy/wg-easy:latest
     container_name: wg-easy

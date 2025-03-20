@@ -1,11 +1,12 @@
 ### SETUP docker-compose
 ```bash
 bash run.sh
-# just copy the public ip
+# just copy the public ip & the hash
 ```
 
 ```yaml
 # put the public ip after WG_HOST=90....
+# put the hash without any other characters after PASSWORD_HASH=
 services:
   wg-easy:
     environment:
@@ -14,6 +15,7 @@ services:
       - HOST=0.0.0.0
       - LANG=de
       - WG_HOST=
+      - PASSWORD_HASH=$2a$12$0qy9SxQjbE4GVcdkXs2gMO69t72TGHP5KDL3Wbbk72f2Z9dsrgxoq
 ```
 
 
